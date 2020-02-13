@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <article class="flex-container">
+        <figure class="flex-item">
+            <img src="mp.jpg" alt="Mikhail Pakaliuk">
+            <figcaption>The way Michael sees himself</figcaption>
+        </figure>
+        <div class="raw-item">
+            <h1>Mikhail Pakaliuk</h1>
+            <p>Email: mr.dyurilen.one@gmail.com </p>
+            <p>Telegram: SayDzuar</p>
+            <p>Ready always learning new things from everywhere etc_)</p>
+            <p>Skills ( Basic knowledge JS, C#, OOP, Git)</p>
+            <p>Experience ( Main experience is the administration and support of a database on 1C)</p>
+            <p>Graduated from BrSU 2016 with a degree in Applied Mathematics.</p>
+            <p>The practice of communication in English, as such, was not.</p>
+        </div>
+    </article>
+
+    <aside>
+        <p>Code examples</p>
+        <code>
+            <p>```javascript</p>
+
+            <p>function multiply(first, second) {</p>
+    
+            <p>function toInt(array) {</p>
+    
+            <p>let result = [];</p>
+    
+            <p>for (let i = 0; i &lt; array.length; i++) {</p>
+    
+            <p>result[i] = parseInt(array[i]);</p>
+    
+            <p>}</p>
+    
+            <p>return result;</p>
+    
+            <p>}</p>
+    
+            <p>function crutch(value) {</p>
+    
+            <p>if (typeof value === 'number' &amp; isFinite(value)) {</p>
+    
+            <p>return value;</p>
+    
+            <p>} else {</p>
+    
+            <p>return value = 0;</p>
+    
+            <p>}</p>
+    
+            <p>}</p>
+    
+            <p>let arrayFirst = toInt(first.split('').reverse());</p>
+    
+            <p>let arraySecond = toInt(second.split('').reverse());</p>
+    
+            <p>let lengthFirst = first.length;let lengthSecond =second.length;</p>
+    
+            <p>let lengthResult = lengthFirst + lengthSecond - 1;</p>
+    
+            <p>let result = '';let sum = 0;let olderFigure = 0;</p>
+    
+            <p>for (let i = 0; i &lt; lengthResult; i++) {</p>
+    
+            <p>for (let j = 0; j &lt;= i; j++) {</p>
+    
+            <p>if (((i - j) &lt; second.length) &amp; (j &lt; first.length)) {</p>
+    
+            <p>sum += crutch(arrayFirst[j] * arraySecond[i - j]);</p>
+    
+            <p>} else {</p>
+    
+            <p>sum += 0;</p>
+    
+            <p>}</p>
+    
+            <p>}</p>
+    
+            <p>sum += olderFigure;</p>
+    
+            <p>olderFigure = Math.floor(sum / 10);</p>
+    
+            <p>result = sum%10 + result;</p>
+    
+            <p>sum=0;</p>
+    
+            <p>}</p>
+    
+            <p>if(olderFigure&gt;0){</p>
+    
+            <p>result = olderFigure + result;</p>
+    
+            <p>}</p>
+    
+            <p>while(result.startsWith('0')&amp;&amp;result.length&gt;1){</p>
+    
+            <p>result=result.substring(1);</p>
+    
+            <p>}</p>
+    
+            <p>return result;</p>
+    
+            <p>}</p>
+    
+            <p>```</p>
+
+        </code>
+
+    </aside>
+
+
+
+</body>
+
+</html>
