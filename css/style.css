@@ -7,7 +7,9 @@ body {
     max-width: 800px;
     margin: auto;
 }
-
+h3{
+    text-align: center;
+}
 .flex-container {
 	display: -webkit-flex;
 	display: flex;
