@@ -6,117 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 
 <body>
-    <div class="name">
-        <h1>Mikhail Pakaliuk</h1>
-    </div>
-    <article class="flex-container">
 
-        <div class="flex-item">
-            <figure>
-                <img src="img/mp.jpg" alt="Mikhail Pakaliuk">
-                <figcaption>The way Michael sees himself</figcaption>
-            </figure>
-            <section>
-                <h2>Contact</h2>
-                <ul>
-                    <li>Email: mr.dyurilen.one@gmail.com </li>
-                    <li>Telegram: SayDzuar</li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/mikhail-pakaliuk-56b6841a7/">mikhail-pakaliuk</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <div class="raw-item">
+    <header>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav__item"><a href="#about-me">About me</a></li>
+                <li class="nav__item"><a href="#skills">Skills</a></li>
+                <li class="nav__item"><a href="#experience">Experience</a></li>
+                <li class="nav__item"><a href="#education">Education</a></li>
+                <li class="nav__item"><a href="#code-examples">Code examples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="flex-container">
+            <div class="flex-item">
+                <figure>
+                    <img src="img/mp.jpg" alt="Mikhail Pakaliuk">
+                    <figcaption>The way Michael sees himself</figcaption>
+                </figure>
+                <section>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Email: mr.dyurilen.one@gmail.com </li>
+                        <li>Telegram: SayDzuar</li>
+                        <li>LinkedIn: <a
+                                href="https://www.linkedin.com/in/mikhail-pakaliuk-56b6841a7/">mikhail-pakaliuk</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="raw-item">
 
-            <p>Ready always learning new things from everywhere etc_)</p>
+                <h1 id="about-me">Mikhail Pakaliuk</h1>
+                <p>Ready always learning new things from everywhere etc_)</p>
 
-            <section>
-                <h2>Skills </h2>
-                <ul>
-                    <li>HTML&CSS</li>
-                    <li>JS</li>
-                    <li>C#</li>
-                    <li>OOP</li>
-                    <li>Git</li>
-                </ul>
-            </section>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>JS</li>
+                        <li>C#</li>
+                        <li>OOP</li>
+                        <li>Git</li>
+                    </ul>
+                </section>
 
-            <section>
-                <h2>Experience</h2>
-                <p>Main experience is the administration and support of a database on 1C</p>
-            </section>
+                <section id="experience">
+                    <h2>Experience</h2>
+                    <p>Main experience is the administration and support of a database on 1C</p>
+                </section>
 
-            <section>
-                <h2>Education</h2>
-                <p>Graduated from BrSU 2016 with a degree in Applied Mathematics.</p>
-            </section>
+                <section id="education">
+                    <h2>Education</h2>
+                    <p>Graduated from BrSU 2016 with a degree in Applied Mathematics.</p>
+                </section>
 
-            <p>The practice of communication in English, as such, was not.</p>
-        </div>
-    </article>
+                <section>
+                    <h4>English</h4>
+                    <p>The practice of communication in English, as such, was not.</p>
+                </section>
 
-    <aside>
-        <h3>Code examples</h3>
-        <pre>
-            <code>
-function multiply<var>(first, second</var>) {
-    function toInt(array) {
-        let <var>result</var> = [];
-        for (let i = 0; i &lt; array.length; i++) {
-            <var>result[i]</var> = parseInt(array[i]);
-        }
-    return <var>resul</var>t;
-    }
+            </div>
+        </article>
 
-    function crutch(<var>value</var>) {
-        if (typeof <var>value</var> === 'number' &amp; isFinite(<var>value</var>)) {
-            return <var>value</var>;
-        } else {
-            return <var>value</var> = 0;
-        }
-    }
-
-    let <var>arrayFirst</var> = toInt(first.split('').reverse());
-    let <var>arraySecond</var> = toInt(second.split('').reverse());
-    let <var>lengthFirst</var> = first.length; let <var>lengthSecond</var> =second.length;
-    let <var>lengthResult</var> = lengthFirst + lengthSecond - 1;
-    let <var>result</var> = ''; let <var>sum</var> = 0; let <var>olderFigure</var> = 0;
-
-    for (let i = 0; i &lt; lengthResult; i++) {
-        for (let j = 0; j &lt;= i; j++) {
-            if (((i - j) &lt; second.length) &amp; (j &lt; first.length)) {
-                <var>sum</var> += crutch(arrayFirst[j] * arraySecond[i - j]);
-            } else {
-                <var>sum</var> += 0;
-            }
-        }
-        <var>sum</var> += olderFigure;
-        <var>olderFigure</var> = Math.floor(sum / 10);
-        <var>result</var> = sum%10 + <var>>result</var>;
-        <var>sum</var>=0;
-    }
-    if(olderFigure&gt;0){
-        result = olderFigure + result;
-    }
-    while(result.startsWith('0')&amp;&amp;result.length&gt;1){
-        <var>result</var>=result.substring(1);
-    }
-    return <var>result</var>;
-}
+        <aside id="code-examples">
+            <h3>Code examples</h3>
+            <pre> <code data-language = "javascript">
+            function multiply<var>(first, second</var>) {
+                function toInt(array) {
+                    let <var>result</var> = [];
+                    for (let i = 0; i &lt; array.length; i++) {
+                        <var>result[i]</var> = parseInt(array[i]);
+                    }
+                return <var>result</var>;
+                }
             </code>
         </pre>
 
-    </aside>
-    <footer class="flex-container">
-        <h4 class="flex-item"><a href="https://github.com/MikhailPakaliuk" target="_blank"><img class="footer-logo"
-                    src="img/github-logo.png" alt="github-logo"></a></h4>
-        <time class="flex-item">2021</time>
-        <h4 class="flex-item"><a href="https://rs.school/js/" target="_blank"><img class="footer-logo"
-                    src="https://rs.school/images/rs_school_js.svg" alt="rs-logo"></a></h4>
+        </aside>
+    </Main>
+
+    <footer class="footer">
+        <a class="footer__github" href="https://github.com/MikhailPakaliuk" target="_blank">
+            <img height="32" src="img/github-logot.png" alt="github-logo">
+        </a>
+        <p class="footer__year">2022</p>
+        <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+            <img src="https://rs.school/images/rs_school_js.svg" width="86" height="32" alt="RS School" />
+        </a>
     </footer>
 </body>
 
