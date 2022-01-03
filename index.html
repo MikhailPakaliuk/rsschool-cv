@@ -6,47 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 
 <body>
-    <article class="flex-container">
-        <div class="flex-item">
-            <figure>
-                <img src="img/mp.jpg" alt="Mikhail Pakaliuk">
-                <figcaption>The way Michael sees himself</figcaption>
-            </figure>
-            <section>
-                <h2>Contact</h2>
-                <ul>
-                    <li>Email: mr.dyurilen.one@gmail.com </li>
-                    <li>Telegram: SayDzuar</li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/mikhail-pakaliuk-56b6841a7/">mikhail-pakaliuk</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <div class="raw-item">
-            <h1>Mikhail Pakaliuk</h1>
 
-            <p>Ready always learning new things from everywhere etc_)</p>
-            <section>
-                <h2>Skills </h2>
-                <ul>
-                    <li>JS</li>
-                    <li>C#</li>
-                    <li>OOP</li>
-                    <li>Git</li>
-                </ul>
-            </section>
-            <p>Experience ( Main experience is the administration and support of a database on 1C)</p>
-            <p>Graduated from BrSU 2016 with a degree in Applied Mathematics.</p>
-            <p>The practice of communication in English, as such, was not.</p>
-        </div>
-    </article>
+    <header>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav__item"><a href="#about-me">About me</a></li>
+                <li class="nav__item"><a href="#skills">Skills</a></li>
+                <li class="nav__item"><a href="#experience">Experience</a></li>
+                <li class="nav__item"><a href="#education">Education</a></li>
+                <li class="nav__item"><a href="#code-examples">Code examples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="flex-container">
+            <div class="flex-item">
+                <figure>
+                    <img src="img/mp.jpg" alt="Mikhail Pakaliuk">
+                    <figcaption>The way Michael sees himself</figcaption>
+                </figure>
+                <section>
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Email: mr.dyurilen.one@gmail.com </li>
+                        <li>Telegram: SayDzuar</li>
+                        <li>LinkedIn: <a
+                                href="https://www.linkedin.com/in/mikhail-pakaliuk-56b6841a7/">mikhail-pakaliuk</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="raw-item">
 
-    <aside>
-        <h3>Code examples</h3>
-        <pre>  <code>
+                <h1 id="about-me">Mikhail Pakaliuk</h1>
+                <p>Ready always learning new things from everywhere etc_)</p>
+
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>JS</li>
+                        <li>C#</li>
+                        <li>OOP</li>
+                        <li>Git</li>
+                    </ul>
+                </section>
+
+                <section id="experience">
+                    <h2>Experience</h2>
+                    <p>Main experience is the administration and support of a database on 1C</p>
+                </section>
+
+                <section id="education">
+                    <h2>Education</h2>
+                    <p>Graduated from BrSU 2016 with a degree in Applied Mathematics.</p>
+                </section>
+
+                <section>
+                    <h4>English</h4>
+                    <p>The practice of communication in English, as such, was not.</p>
+                </section>
+
+            </div>
+        </article>
+
+        <aside id="code-examples">
+            <h3>Code examples</h3>
+            <pre> <code data-language = "javascript">
             function multiply<var>(first, second</var>) {
                 function toInt(array) {
                     let <var>result</var> = [];
@@ -93,11 +122,17 @@
             }
         </code></pre>
 
-    </aside>
-    <footer class="flex-container">
-        <h4 class="flex-item"><a href="https://github.com/MikhailPakaliuk" target="_blank"><img width="100" src="img/clipart483031.png" alt="github-logo"></a></h4>
-        <time class="flex-item">2021</time>
-        <h4 class="flex-item"><a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rs-logo"></a></h4>
+        </aside>
+    </Main>
+
+    <footer class="footer">
+        <a class="footer__github" href="https://github.com/MikhailPakaliuk" target="_blank">
+            <img height="32" src="img/github-logot.png" alt="github-logo">
+        </a>
+        <p class="footer__year">2022</p>
+        <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+            <img src="https://rs.school/images/rs_school_js.svg" width="86" height="32" alt="RS School" />
+        </a>
     </footer>
 </body>
 
